@@ -1,0 +1,33 @@
+{
+  "name": "oauth2-1-sample",
+  "version": "1.0.0",
+  "description": "OAuth 2.1 implementation sample with authorization server and client application",
+  "main": "index.js",
+  "scripts": {
+    "start:auth-server": "node src/auth-server/server.js",
+    "start:client": "node src/client/client.js",
+    "start": "concurrently \"npm run start:auth-server\" \"npm run start:client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "oauth2.1",
+    "oauth",
+    "authorization",
+    "authentication",
+    "pkce",
+    "sample"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "base64url": "^3.0.1",
+    "axios": "^1.6.0",
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
